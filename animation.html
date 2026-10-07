@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Animation</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="sub-header">
+    <div class="text">
+      <h1>Portfolio_web</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="animation.html" class="active">Animation</a>
+      <a href="illustration.html">Illustration</a>
+    </nav>
+
+    <a href="index.html#contact" class="contact">Contact</a>
+  </header>
+
+  <main class="animation-page">
+
+  <section class="animation-layout">
+
+    <!-- 왼쪽 -->
+    <div class="animation-main">
+
+      <div class="main-player">
+        <video
+          id="featured-video"
+          controls
+          playsinline
+          poster="video/cell.PNG"
+        >
+          <source src="video/video_cell.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="animation-description">
+        <span id="featured-category">Medical Animation</span>
+
+        <h1 id="featured-title">
+          Abdominal Aortic Aneurysm Animation
+        </h1>
+
+        <p id="featured-description">
+          복부 대동맥류의 발생 과정과 해부학적 변화를
+          애니메이션으로 시각화한 작업입니다.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- 오른쪽 추천 영상 -->
+    <aside class="animation-sidebar">
+
+      <button
+        class="video-card active"
+        data-video="video/2.mp4"
+        data-poster="images/animation-thumb1.jpg"
+        data-category="Medical Animation"
+        data-title="Abdominal Aortic Aneurysm Animation"
+        data-description="복부 대동맥류의 발생 과정과 해부학적 변화를 애니메이션으로 시각화한 작업입니다."
+      >
+
+        <img
+          src="images/cell.PNG"
+          alt="Animation 1"
+        >
+
+        <div class="video-card-info">
+          <span>Medical Animation</span>
+          <h2>Abdominal Aortic Aneurysm</h2>
+        </div>
+
+      </button>
+
+
+      <button
+        class="video-card"
+        data-video="video/1.mp4"
+        data-poster="images/animation-thumb2.jpg"
+        data-category="Scientific Animation"
+        data-title="Scientific Visualization 02"
+        data-description="복잡한 과학적 개념을 단계적으로 설명하기 위한 애니메이션입니다."
+      >
+
+        <img
+          src="images/cell.PNG"
+          alt="Animation 2"
+        >
+
+        <div class="video-card-info">
+          <span>Scientific Animation</span>
+          <h2>Scientific Visualization 02</h2>
+        </div>
+
+      </button>
+
+
+      <button
+        class="video-card"
+        data-video="video/3.mp4"
+        data-poster="images/animation-thumb3.jpg"
+        data-category="Medical Animation"
+        data-title="Medical Visualization 03"
+        data-description="의학적 구조와 움직임을 쉽게 이해할 수 있도록 제작한 애니메이션입니다."
+      >
+
+        <img
+          src="images/animation-thumb3.jpg"
+          alt="Animation 3"
+        >
+
+        <div class="video-card-info">
+          <span>Medical Animation</span>
+          <h2>Medical Visualization 03</h2>
+        </div>
+
+      </button>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer>
+  Portfolio_web.2026
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

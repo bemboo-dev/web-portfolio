@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio</title>
+
+  <script>
+    if (sessionStorage.getItem("introPlayed") === "true") {
+      document.documentElement.classList.add("skip-intro");
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro">
+    <video autoplay muted playsinline>
+      <source src="video/intro.mp4" type="video/mp4">
+    </video>
+    </div>
+    <header>
+        <div class="text">
+            <h1>Portfolio_web</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="animation.html">Animation</a>
+            <a href="illustration.html">Illustration</a>
+        </nav>
+
+        <a href="#" class="contact">Contact</a>
+    </header>
+    <main>
+        <div class="main-visual">
+            <video class="main-video active" muted playsinline preload="auto">
+                <source src="video/1.mp4" type="video/mp4">
+            </video>
+            <video class="main-video" muted playsinline preload="auto">
+                <source src="video/2.mp4" type="video/mp4">
+            </video>
+            <video class="main-video" muted playsinline preload="auto">
+                <source src="video/3.mp4" type="video/mp4">
+            </video>
+            <div class="main-text">
+                <h2 class="color-change">Medical & Science Communication</h2>
+                <p class="color-change">Complex science, clearly visualized.</p>
+
+                <a href="about.html" class="main-btn">Learn More</a>
+            </div>
+        </div>
+        <section class="intro-section">
+            <h2>Portfolio</h2>
+            <p class="portfolio-intro">
+                과학과 디자인을 연결하여 복잡한 정보를
+                명확하고 아름답게 전달합니다.
+            </p>
+            <div class="portfolio-tabs">
+                <button class="tab-btn active" data-category="art3d">
+                    3D artworks
+                </button>
+
+                <button class="tab-btn" data-category="art2d">
+                    2D artworks
+                </button>
+            </div>
+
+        <div class="reel-wrapper">
+            <button class="reel-arrow left">
+                &#10094;
+            </button>
+            <div class="portfolio-reel">
+                <a href="project-aaa.html" class="portfolio-item art3d">
+                    <img src="images/5.PNG" alt="3D 1">
+                        <div class="portfolio-info">
+                            <span>3D Visualization</span>
+                            <h3>Abdominal Aortic Aneurysm</h3>
+                            <p>복부 대동맥류의 구조와 질환 진행 과정을 
+                                시각화한 의료 일러스트레이션입니다.</p>
+                        </div>
+                </a>
+                <a href="project-2D1.html" class="portfolio-item art2d">
+                    <img src="images/1.PNG" alt="2D 1">
+                        <div class="portfolio-info">
+                            <span>3D Visualization</span>
+                            <h3>Abdominal Aortic Aneurysm</h3>
+                            <p>해부학적 구조를 명료하게 전달하기 위한
+                                2D 의료 일러스트레이션입니다.</p>
+                        </div>
+                </a>
+                <a href="project-2D2.html" class="portfolio-item art2d">
+                    <img src="images/2.PNG" alt="2D 2">
+                        <div class="portfolio-info">
+                            <span>3D Visualization</span>
+                            <h3>Abdominal Aortic Aneurysm</h3>
+                            <p>해부학적 구조를 명료하게 전달하기 위한
+                                2D 의료 일러스트레이션입니다.</p>
+                        </div>
+                </a>
+                <a href="project-2D3.html" class="portfolio-item art2d">
+                    <img src="images/3.PNG" alt="2D 3">
+                        <div class="portfolio-info">
+                            <span>3D Visualization</span>
+                            <h3>Abdominal Aortic Aneurysm</h3>
+                            <p>해부학적 구조를 명료하게 전달하기 위한
+                                2D 의료 일러스트레이션입니다.</p>
+                        </div>
+                </a>
+                <a href="project-2D4.html" class="portfolio-item art2d">
+                    <img src="images/4.PNG" alt="2D 4">
+                        <div class="portfolio-info">
+                            <span>3D Visualization</span>
+                            <h3>Abdominal Aortic Aneurysm</h3>
+                            <p>해부학적 구조를 명료하게 전달하기 위한
+                                2D 의료 일러스트레이션입니다.</p>
+                        </div>
+                </a>
+                <a href="project-2D5.html" class="portfolio-item art2d">
+                    <img src="images/6.PNG" alt="2D 5">
+                        <div class="portfolio-info">
+                            <span>3D Visualization</span>
+                            <h3>Abdominal Aortic Aneurysm</h3>
+                            <p>해부학적 구조를 명료하게 전달하기 위한
+                                2D 의료 일러스트레이션입니다.</p>
+                        </div>
+                </a>
+                </div>     
+        <button class="reel-arrow right">
+            &#10095;
+        </button>   
+        </div>
+<section class="board-section">
+  <div class="board-tabs">
+    <button class="board-tab active" data-board="notice">공지사항</button>
+    <button class="board-tab" data-board="recent">최근 게시물</button>
+  </div>
+
+  <div class="board-list notice-list">
+
+    <a href="#" class="board-row">
+      <div class="board-left">
+        <span class="board-label">공지</span>
+        <span class="board-title">
+          20여 년 만에 열린 특별전 방문: 크뢸러 뮐러 미술관
+        </span>
+      </div>
+
+      <span class="board-date">2026. 9. 22.</span>
+    </a>
+
+    <a href="#" class="board-row">
+      <div class="board-left">
+        <span class="board-label">공지</span>
+        <span class="board-title">
+          글과 그림이 있는 공간 인체해부 천 년의 이야기
+        </span>
+      </div>
+
+      <span class="board-date">2026. 8. 10.</span>
+    </a>
+
+    <a href="#" class="board-row">
+      <div class="board-left">
+        <span class="board-label">공지</span>
+        <span class="board-title">
+          현대 디자인과 시각 커뮤니케이션의 새로운 흐름
+        </span>
+      </div>
+
+      <span class="board-date">2026. 8. 4.</span>
+    </a>
+
+  </div>
+
+
+  <div class="board-list recent-list">
+
+    <a href="#" class="board-row">
+      <div class="board-left">
+        <span class="board-category">3D</span>
+        <span class="board-title">
+          Abdominal Aortic Aneurysm Visualization
+        </span>
+      </div>
+
+      <span class="board-date">2026. 9. 28.</span>
+    </a>
+
+    <a href="#" class="board-row">
+      <div class="board-left">
+        <span class="board-category">2D</span>
+        <span class="board-title">
+          Medical Illustration Study
+        </span>
+      </div>
+
+      <span class="board-date">2026. 9. 18.</span>
+    </a>
+
+    <a href="#" class="board-row">
+      <div class="board-left">
+        <span class="board-category">Animation</span>
+        <span class="board-title">
+          Scientific Animation Project
+        </span>
+      </div>
+
+      <span class="board-date">2026. 9. 3.</span>
+    </a>
+
+  </div>
+
+</section>
+    <footer>Portfolio_web.2026</footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
